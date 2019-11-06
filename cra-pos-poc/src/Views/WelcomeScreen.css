@@ -1,0 +1,130 @@
+.WelcomeScreen-base{
+    
+    background-color: #0D5257;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.WelcomeScreen-header{
+    display: flex;
+    height: 15vh;
+    /* border-bottom:1px dashed white; */
+}
+
+.Bunnings-logo{
+    width: 163px;
+    height: 29px;
+    margin: 10px;
+    background-color: white;
+}
+
+.WelcomeScreen-body{
+   /* border-bottom:1px solid white; */
+}
+
+.CardOnly-message-box{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.CardOnly-title{
+    text-align: center;
+    font-family: inherit;
+    letter-spacing: 0;
+    font-size: 10vh;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-bottom: 0px;
+}
+
+.CardOnly-subtext{
+    display:inline;
+    text-align: center;
+    font-family: inherit;
+    letter-spacing: 0;
+    font-size: 2vh;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-top: 0px;
+}
+
+.Button-start{
+    position: central;
+    margin-top: 15vh;
+    width: 50vw;
+    /* margin-left: auto;
+    margin-left: auto; */
+    height: 90px;
+    background: #00000014 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    border-radius: 17px;
+    opacity: 1;
+    color: white;
+
+    font-size: 150%;
+}
+
+.Button-start:hover{
+    opacity: 0.5;
+}
+
+
+
+
+.WelcomeScreen-footer{
+    position: absolute;
+    left: 0;
+    display: inline-flex;
+    bottom: 0;
+    width: 100vw;
+    height: 17vh;
+    /* border-top: 1px dashed white; */
+    background-color: white;
+}
+
+.Support-button-container{
+    width: 50vw;
+    display: flex;
+    height: inherit;
+}
+
+.TEMP-SupportButton{
+    position: inline;
+    bottom: 0;
+    width: 85px;
+    height: 85px;
+    margin:10px;
+    text-align: center;
+    font-size: small;
+    color:#0D5257;
+}
+
+.TEMP-SupportButton:hover{
+    opacity: 0.5;
+}
+
+.TEMP-Icon{
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    width:50px; 
+    height:50px; 
+    border:2px solid #0D5257; 
+    border-Radius:90px;
+    background-color: white; 
+}
+
+.PaymentType-list-Container{
+    height: inherit;
+    color: #4D4D4D;
+    width: 50vw;
+}
+
+.PaymentType-icon{
+    display: inline-flex;
+    width: 50px;
+    height: 30px;
+    margin-left: 2px;
+    background-color: gray;
+}
