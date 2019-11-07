@@ -1,5 +1,27 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+//----------------------------------------------------------//
+
+
+Just fiddling with a few things, does not have unit tests, and
+css is a bit wonky at the moment because once i have base structure
+set with store/mini stores and actions doing their job with components able to have the context from the store then i'll be 
+looking at UI libraries for correct UI structure.
+
+//----------------------------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
