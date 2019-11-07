@@ -1,5 +1,13 @@
 import React, { useReducer, createContext, useContext } from "react";
 
+//STATES
+import { counterState } from '../States/counter'
+import { appSettingsState } from '../States/appSettings'
+
+//ACTIONS
+import { countIncrement } from '../Actions/counter'
+import { currentScreen } from '../Actions/appSettings'
+
 const StateContext = createContext(null);
 
 export function Provider({ children, reducer, initialState }) {
@@ -14,14 +22,30 @@ export function useGlobalState() {
   return useContext(StateContext);
 }
 
-export function Reducer(state, action) {
-    switch (action.type) {
+export function Reducer(state, Actions) {
+    switch (Actions.type) {
       case "INCREMENT":
-          console.log(state)
-        return state += 1;
+        return {
+          ...state,
+          count: state.count += Actions.payload
+        }
+      case "UPDATE_CURRENT_SCREEN": 
+        return {
+          ...state,
+          currentScreen: Actions.payload
+        }
       default:
         return state;
     }
   }
+
+  export const Actions = {
+    ...countIncrement,
+    ...currentScreen
+  }
   
-  export const InitialState = 0;
+  export const InitialState = { 
+    ...appSettingsState,
+    ...counterState
+
+  }
